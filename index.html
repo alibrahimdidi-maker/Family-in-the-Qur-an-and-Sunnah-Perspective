@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHA0926 — ހުރިހާ ހަފްތާ | Family in the Qur'an and Sunnah Perspective</title>
+<title>الأسرة في ضوء القرآن والسنة — SHA0926</title>
 <style>
-
 @font-face{
   font-family:'Faruma';
   src:url('fonts/Faruma.ttf') format('truetype');
@@ -13,45 +12,24 @@
   font-style:normal;
   font-display:swap;
 }
-
-/* ===== Module-code gate ===== */
-#moduleGate{
-  position:fixed;inset:0;z-index:5000;
-  background:linear-gradient(160deg,#001F3F 0%,#08281f 55%,#013B22 100%);
-  display:flex;align-items:center;justify-content:center;padding:20px;
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:#050912;
   font-family:'Faruma','MV Boli','A_Faruma',Tahoma,Arial,sans-serif;
+  padding:16px 0 40px;
 }
-#moduleGate .gate-card{
-  max-width:420px;width:100%;background:#fbfaf6;border:3px double #d4af37;
-  border-radius:18px;padding:34px 28px;text-align:center;
-  box-shadow:0 25px 60px rgba(0,0,0,.45);
+#gateInput:focus{outline:none;border-color:#f4d03f;box-shadow:0 0 0 3px rgba(212,175,55,.25);}
+#gateInput.shake{animation:gateShake .4s;}
+@keyframes gateShake{
+  10%,90%{transform:translateX(-2px);}
+  20%,80%{transform:translateX(3px);}
+  30%,50%,70%{transform:translateX(-5px);}
+  40%,60%{transform:translateX(5px);}
 }
-#moduleGate .gate-badge{
-  display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#08281f 0%,#12503a 100%);
-  border:2px solid #d4af37;border-radius:30px;padding:8px 22px;color:#f4d03f;
-  font-weight:bold;font-size:15px;letter-spacing:1.5px;margin-bottom:18px;
-}
-#moduleGate h1{
-  color:#0e3b2c;font-size:clamp(18px,3vw,24px);margin:0 0 8px;font-weight:bold;
-}
-#moduleGate p{color:#5a5245;font-size:14px;margin:0 0 22px;line-height:1.8;}
-#moduleGate input{
-  width:100%;padding:13px 16px;border:2px solid #d4af37;border-radius:10px;
-  font-family:'Faruma','MV Boli',Tahoma,Arial,sans-serif;font-size:19px;text-align:center;
-  letter-spacing:2px;color:#0e3b2c;background:#fff;box-sizing:border-box;
-  text-transform:uppercase;
-}
-#moduleGate input:focus{outline:none;border-color:#0e3b2c;}
-#moduleGate .gate-btn{
-  margin-top:14px;width:100%;padding:13px;border:none;border-radius:10px;cursor:pointer;
-  background:linear-gradient(135deg,#08281f 0%,#12503a 100%);color:#f4d03f;
-  font-weight:bold;font-size:16px;font-family:inherit;box-shadow:0 6px 16px rgba(8,40,31,.35);
-}
-#moduleGate .gate-btn:hover{filter:brightness(1.12);}
-#moduleGate .gate-err{
-  color:#c0392b;font-size:13.5px;margin-top:12px;min-height:18px;font-weight:bold;
-}
-#courseContent{display:none;}
+#courseContent{display:none;background:#e9e6db;padding:64px 12px 24px;margin-top:26px;border-radius:20px;}
+</style>
+<style>
 
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
@@ -130,7 +108,7 @@ body{background:#e9e6db;padding:64px 12px 24px;-webkit-print-color-adjust:exact;
   .deck p,.deck li{orphans:3;widows:3;}
 }
 
-/* ===== Top-level week accordion ===== */
+/* ===== Top-level week accordion (course library) ===== */
 .course-wrap{max-width:1000px;margin:0 auto;}
 .course-title{
   text-align:center;background:linear-gradient(135deg,#08281f 0%,#12503a 100%);
@@ -172,22 +150,211 @@ details.week-acc[open]>summary .week-chev{transform:rotate(180deg);}
 </style>
 </head>
 <body>
-
-<div id="moduleGate">
-  <div class="gate-card">
-    <div class="gate-badge">SHA0926</div>
-    <h1>Family in the Qur'an and Sunnah Perspective</h1>
-    <p>ސްލައިޑްތައް ބެއްލެވުމަށް، މޮޑިއުލް ކޯޑު ޖައްސަވާ</p>
-    <input type="text" id="gateInput" placeholder="މޮޑިއުލް ކޯޑު" autocomplete="off" autocapitalize="characters" spellcheck="false">
-    <button class="gate-btn" id="gateBtn">ވަދޭ</button>
-    <div class="gate-err" id="gateErr"></div>
+<div dir="rtl"
+  style="max-width: 900px; margin: 20px auto; border-radius: 20px; background: linear-gradient(160deg,#050912 0%,#0f1c3a 55%,#050912 100%); box-shadow: 0 15px 40px rgba(0,0,0,0.5); overflow: hidden; border: 1px solid rgba(212,175,55,0.3); font-family: 'Faruma','MV Boli',Tahoma,Arial,sans-serif;">
+  <!-- Header banner -->
+  <div
+    style="padding: 26px 24px 20px; text-align: center; background: linear-gradient(135deg,#0a1128 0%,#152449 100%); border-bottom: 2px solid #d4af37;">
+    <h1
+      style="font-family: 'Traditional Arabic','Amiri',Georgia,serif; font-size: 30px; font-weight: bold; margin: 0 0 10px; line-height: 1.6; color: #e8c766; text-shadow: 0 2px 8px rgba(0,0,0,.5);">
+      الأسرة في ضوء القرآن والسنة</h1>
+    <h2
+      style="font-size: 24px; font-weight: bold; margin: 0 0 8px; line-height: 1.5; color: #ffffff;">
+      ޤުރުއާނާއި ސުންނަތުގެ އަލީގައި ޢާއިލާ</h2>
+    <div
+      style="width: 180px; height: 1px; margin: 14px auto 0; background: linear-gradient(to right,transparent,#d4af37,transparent);">
+       </div>
+  </div>
+  <!-- Module info -->
+  <table
+    style="width: 100%; max-width: 640px; margin: 24px auto 0; border-collapse: collapse;">
+    <tbody>
+      <tr>
+        <td style="text-align: center; padding: 0 8px 4px;" id="gateCell">
+          <div
+            style="font-size: 11px; letter-spacing: 1.5px; color: #d9c07a; opacity: .85; margin-bottom: 5px;">
+            މޮޑިއުލް ކޯޑު</div>
+          <input type="text" id="gateInput" placeholder="ޖައްސަވާ" autocomplete="off" autocapitalize="characters" spellcheck="false"
+            style="width: 108px; text-align: center; font-family: Georgia,serif; font-size: 15px; font-weight: bold; color: #ffffff; background: rgba(255,255,255,0.1); border: 1.5px solid #d4af37; border-radius: 7px; padding: 6px 4px; box-sizing: border-box; letter-spacing: 1px; text-transform: uppercase;">
+          <div id="gateMsg" style="font-size: 10.5px; margin-top: 5px; min-height: 13px; color: #e07a7a;"></div>
+        </td>
+        <td style="width: 1px; background: rgba(212,175,55,0.5);"> </td>
+        <td style="text-align: center; padding: 0 8px 4px;">
+          <div
+            style="font-size: 11px; letter-spacing: 1.5px; color: #d9c07a; opacity: .85; margin-bottom: 5px;">
+            ލެކްޗަރަރ</div>
+          <div
+            style="font-family: 'Faruma','MV Boli',Tahoma,Arial,sans-serif; font-size: 16px; font-weight: bold; color: #ffffff;">
+            ޢަލީ އިބްރާހީމް ދީދީ</div>
+        </td>
+        <td style="width: 1px; background: rgba(212,175,55,0.5);"> </td>
+        <td style="text-align: center; padding: 0 8px 4px;">
+          <div
+            style="font-size: 11px; letter-spacing: 1.5px; color: #d9c07a; opacity: .85; margin-bottom: 5px;">
+            ކޯހުގެ ލެވެލް</div>
+          <div
+            style="font-family: 'Faruma','MV Boli',Tahoma,Arial,sans-serif; font-size: 15px; font-weight: bold; color: #ffffff;">
+            މާސްޓަރސް (9)</div>
+        </td>
+        <td style="width: 1px; background: rgba(212,175,55,0.5);"> </td>
+        <td style="text-align: center; padding: 0 8px 4px;">
+          <div
+            style="font-size: 11px; letter-spacing: 1.5px; color: #d9c07a; opacity: .85; margin-bottom: 5px;">
+            ކްރެޑިޓް</div>
+          <div
+            style="font-family: Georgia,serif; font-size: 17px; font-weight: bold; color: #ffffff;">
+            15</div>
+        </td>
+        <td style="width: 1px; background: rgba(212,175,55,0.5);"> </td>
+        <td style="text-align: center; padding: 0 8px 4px;">
+          <div
+            style="font-size: 11px; letter-spacing: 1.5px; color: #d9c07a; opacity: .85; margin-bottom: 5px;">
+            ކޮންޓެކްޓް ގަޑި</div>
+          <div
+            style="font-family: 'Faruma','MV Boli',Tahoma,Arial,sans-serif; font-size: 15px; font-weight: bold; color: #ffffff;">
+            50 ގަޑިއިރު</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Video -->
+  <div style="padding: 28px 24px 0; text-align: center;">
+    <div
+      style="max-width: 420px; margin: 0 auto; padding: 4px; border-radius: 12px; background: linear-gradient(135deg,#f7e9ba,#d4af37,#8a6a1f); box-shadow: 0 12px 28px rgba(0,0,0,0.55);">
+      <div
+        style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 9px; overflow: hidden; background: #000;">
+        <iframe
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+          src="https://www.youtube.com/embed/NgOREMQ-SAY?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=NgOREMQ-SAY&amp;controls=1&amp;modestbranding=1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen="allowfullscreen"></iframe></div>
+    </div>
+  </div>
+  <!-- Note badge -->
+  <div style="padding: 20px 24px 26px; text-align: center;">
+    <table
+      style="margin: 0 auto; border-collapse: collapse; background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.4); border-radius: 30px;">
+      <tbody>
+        <tr>
+          <td style="padding: 10px 18px; vertical-align: middle;"><span
+              style="display: inline-block; width: 18px; height: 18px; vertical-align: middle;">🔈</span>
+          </td>
+          <td
+            style="padding: 10px 20px 10px 0; vertical-align: middle; text-align: right; color: #f2ead2; font-size: 14px; font-weight: bold; font-family: 'Faruma','MV Boli',Tahoma,Arial,sans-serif;">
+            ވީޑިއޯ އޮޓޯއިން ފެށޭނީ އަޑުކެނޑިފައެވެ. އަޑު އެހުމަށް ވީޑިއޯގެ
+            ތިރީގައިވާ ސްޕީކަރ އައިކަންއަށް ފިތާލައްވާ!</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Divider between hero and module intro -->
+  <div style="padding: 0 24px;">
+    <div
+      style="height: 1px; background: linear-gradient(to right, transparent, rgba(212,175,55,0.5), transparent);">
+       </div>
+  </div>
+  <!-- Module Intro & Objectives -->
+  <div style="padding: 30px 24px 34px;"><!-- Section 1: Module Introduction -->
+    <details
+      style="margin-bottom: 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(212,175,55,0.25); border-radius: 14px; overflow: hidden;"
+      open="">
+      <summary
+        style="cursor: pointer; list-style: none; padding: 16px 20px; display: flex; align-items: center; gap: 10px; background: rgba(212,175,55,0.08); font-size: 19px; font-weight: bold; color: #e8c766;">
+        <span style="display: inline-flex;"><svg width="22" height="22"
+            viewBox="0 0 24 24">
+            <path
+              d="M12 6.5c-1.6-1.2-3.8-1.8-6.5-1.8v13c2.7 0 4.9 0.6 6.5 1.8 1.6-1.2 3.8-1.8 6.5-1.8v-13c-2.7 0-4.9 0.6-6.5 1.8Z"
+              style="fill:none;stroke:#e8c766;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;">
+            </path>
+            <line x1="12" y1="6.5" x2="12" y2="19.5"
+              style="stroke:#e8c766;stroke-width:1.8;"></line>
+          </svg></span> މާއްދާގެ ތަޢާރަފް</summary>
+      <div
+        style="padding: 18px 20px 22px; text-align: justify; line-height: 2.2; font-size: 17px; color: #e5e9f0;">
+        <p style="margin: 0;">މި މާއްދާއަކީ ކީރިތި ޤުރުއާނާއި ސުންނަތުގެ
+          އަލީގައި ޢާއިލާގެ މުހިންމުކަމާއި އޭގެ ޙަޤީޤީ އަގު ފުޅާ ދާއިރާއެއްގައި
+          ދެނެގަތުމަށް މަގުފަހިކޮށްދޭ މާއްދާއެކެވެ. އަދި މީގެ އިތުރުން، ޢާއިލާގެ
+          އެތެރޭގައާއި ޢާއިލާތަކުގެ މެދުގައި އުފެދޭ މައްސަލަތައް ޙައްލުކުރުމަށް
+          ޤުރުއާނާއި ސުންނަތުގެ އުޞޫލުތައް ބޭނުންކުރަން ދަރިވަރުންނަށް މި
+          މާއްދާއިން އުނގަންނައިދެވޭނެއެވެ.</p>
+      </div>
+    </details>
+    <!-- Section 2: Objectives / Learning Outcomes -->
+    <details
+      style="margin-bottom: 0; background: rgba(255,255,255,0.03); border: 1px solid rgba(212,175,55,0.25); border-radius: 14px; overflow: hidden;">
+      <summary
+        style="cursor: pointer; list-style: none; padding: 16px 20px; display: flex; align-items: center; gap: 10px; background: rgba(212,175,55,0.08); font-size: 19px; font-weight: bold; color: #e8c766;">
+        <span style="display: inline-flex;"><svg width="22" height="22"
+            viewBox="0 0 24 24">
+            <path d="M12 3 1 8l11 5 9-4.09V17"
+              style="fill:none;stroke:#e8c766;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;">
+            </path>
+            <path d="M5 10.5v5c0 1.5 3 3.5 7 3.5s7-2 7-3.5v-5"
+              style="fill:none;stroke:#e8c766;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;">
+            </path>
+          </svg></span> މާއްދާގެ މަޤްޞަދު (Learning Outcomes)</summary>
+      <div style="padding: 18px 20px 22px;">
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div
+            style="display: flex; gap: 14px; align-items: flex-start; background: rgba(255,255,255,0.02); border: 1px solid rgba(212,175,55,0.15); border-radius: 10px; padding: 14px 16px;">
+            <div
+              style="flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(135deg,#f7e9ba,#d4af37,#8a6a1f); color: #0a1128; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 15px;">
+              1</div>
+            <div style="line-height: 2; font-size: 16.5px; color: #e5e9f0;">
+              ޤުރުއާނާއި ސުންނަތުގެ އަލީގައި ޢާއިލާގެ މުހިންމުކަމާއި އަގު
+              ވަޒަންކުރުން، އަދި ޢާއިލީ މައްސަލަތައް ޙައްލުކުރުމަށް އެ
+              އުޞޫލުތައް ޢަމަލީގޮތުން ބޭނުންކުރުން.</div>
+          </div>
+          <div
+            style="display: flex; gap: 14px; align-items: flex-start; background: rgba(255,255,255,0.02); border: 1px solid rgba(212,175,55,0.15); border-radius: 10px; padding: 14px 16px;">
+            <div
+              style="flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(135deg,#f7e9ba,#d4af37,#8a6a1f); color: #0a1128; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 15px;">
+              2</div>
+            <div style="line-height: 2; font-size: 16.5px; color: #e5e9f0;">
+              ޢާއިލާއަށް ނިސްބަތްވުމުގެ ޝުޢޫރު އާލާކުރުމާއި، ޤުރުއާނާއި
+              ސުންނަތުގެ އަލީގައި ބަދަހި ޢާއިލާއެއް ބިނާކުރުމުގެ އުޞޫލުތަކާއި
+              މުޖުތަމަޢު ބިނާކުރުމުގައި ޢާއިލާގެ ދައުރު ދެނެގަތުން.</div>
+          </div>
+          <div
+            style="display: flex; gap: 14px; align-items: flex-start; background: rgba(255,255,255,0.02); border: 1px solid rgba(212,175,55,0.15); border-radius: 10px; padding: 14px 16px;">
+            <div
+              style="flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(135deg,#f7e9ba,#d4af37,#8a6a1f); color: #0a1128; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 15px;">
+              3</div>
+            <div style="line-height: 2; font-size: 16.5px; color: #e5e9f0;">
+              މުޖުތަމަޢުގެ ލާބަޔާއި މަންފާއަށްޓަކައި އިސްލާމީ އުޞޫލުތައް
+              ޢަމަލީގޮތުން ބޭނުންކުރުން.</div>
+          </div>
+          <div
+            style="display: flex; gap: 14px; align-items: flex-start; background: rgba(255,255,255,0.02); border: 1px solid rgba(212,175,55,0.15); border-radius: 10px; padding: 14px 16px;">
+            <div
+              style="flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(135deg,#f7e9ba,#d4af37,#8a6a1f); color: #0a1128; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 15px;">
+              4</div>
+            <div style="line-height: 2; font-size: 16.5px; color: #e5e9f0;">މި
+              މައުޟޫޢާ ގުޅޭގޮތުން އަމިއްލަ ދިރާސާތައް ކުރުމާއި، ލިޔުމުންނާއި
+              އަނގަބަހުން މާނަހުރި ތަޙްލީލުތައް ކުރުން.</div>
+          </div>
+          <div
+            style="display: flex; gap: 14px; align-items: flex-start; background: rgba(255,255,255,0.02); border: 1px solid rgba(212,175,55,0.15); border-radius: 10px; padding: 14px 16px;">
+            <div
+              style="flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(135deg,#f7e9ba,#d4af37,#8a6a1f); color: #0a1128; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 15px;">
+              5</div>
+            <div style="line-height: 2; font-size: 16.5px; color: #e5e9f0;">
+              ޢާއިލީ މައްސަލަތައް ފާޑުކިޔުމުގެ ނަޒަރަކުން ތަޙްލީލުކޮށް
+              ޙައްލުކުރުމާއެކު، އުފާވެރި އެއްބައިވަންތަ ދިރިއުޅުމެއް އުޅުން.
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
   </div>
 </div>
+
 <div class="course-wrap" id="courseContent">
-  <div class="course-title">
-    <h2>Family in the Qur'an and Sunnah Perspective — SHA0926</h2>
-    <p>ހުރިހާ ހަފްތާއެއްގެ ސްލައިޑް — ބޭނުންފުޅުވާ ހަފްތާއެއް ހުޅުވުމަށް ފިއްތަވާ (އެއް ފަހަރާ ހުޅުވޭނީ އެންމެ ހަފްތާއެއް)</p>
-  </div>
+
+<div class="course-title">
+  <h2>Family in the Qur'an and Sunnah Perspective — SHA0926</h2>
+  <p>ހުރިހާ ހަފްތާއެއްގެ ސްލައިޑް — ބޭނުންފުޅުވާ ހަފްތާއެއް ހުޅުވުމަށް ފިއްތަވާ (އެއް ފަހަރާ ހުޅުވޭނީ އެންމެ ހަފްތާއެއް)</p>
+</div>
 
 <details class="week-acc" id="weekAcc1">
   <summary><span class="week-num">WEEK 1</span><span class="week-title">الأسرة ومكانتها ، وسمات الأسرة المسلمة</span><span class="week-chev">&#9660;</span></summary>
@@ -3784,7 +3951,7 @@ details.week-acc[open]>summary .week-chev{transform:rotate(180deg);}
           (عاقدان، معقود عليه، صيغة)</li>
         <li style="margin-bottom: 10px;"><strong>ބައި 2:</strong> އިސްތިޢުޛާނާއި ރުހުމުގެ
           ޝަރުޠުތައް</li>
-        <li style="margin-bottom: 10px;"><strong>ބައި 3:</strong> ރަނުގެ ޝަރުޠުތައް (المهر ގެ ޝަރުޠުތައް)
+        <li style="margin-bottom: 10px;"><strong>ބައި 3:</strong> މާތްރަދާގެ ޝަރުޠުތައް (المهر ގެ ޝަރުޠުތައް)
         </li>
         <li style="margin-bottom: 10px;"><strong>ބައި 4:</strong> ބެލެނިވެރިޔާގެ ޝަރުޠުތައް (الولي ގެ ޝަރުޠުތައް)
         </li>
@@ -6092,58 +6259,57 @@ details.week-acc[open]>summary .week-chev{transform:rotate(180deg);}
 </script>
   </div>
 </details>
+
 </div>
 <script>
-// Accordion behaviour: opening one week closes all the others.
+(function(){
+  var CORRECT_CODE = 'SHA0926';
+  var STORAGE_KEY = 'sha0926-course-unlocked';
+  var input = document.getElementById('gateInput');
+  var msg = document.getElementById('gateMsg');
+  var content = document.getElementById('courseContent');
+
+  function unlock(scroll){
+    content.style.display = 'block';
+    input.value = '';
+    input.disabled = true;
+    input.style.opacity = '0.5';
+    msg.style.color = '#8fd9a8';
+    msg.textContent = 'ވަދެވިއްޖެ';
+    try{ localStorage.setItem(STORAGE_KEY, '1'); }catch(e){}
+    if(scroll){ content.scrollIntoView({behavior:'smooth', block:'start'}); }
+  }
+
+  function tryCode(){
+    var val = (input.value || '').trim().toUpperCase().replace(/\s+/g,'');
+    if(val === CORRECT_CODE){
+      unlock(true);
+    } else if(val.length){
+      msg.style.color = '#e07a7a';
+      msg.textContent = 'ރަނގަޅެއް ނޫން';
+      input.classList.remove('shake'); void input.offsetWidth; input.classList.add('shake');
+    }
+  }
+
+  input.addEventListener('keydown', function(e){ if(e.key === 'Enter') tryCode(); });
+  input.addEventListener('blur', tryCode);
+
+  try{
+    if(localStorage.getItem(STORAGE_KEY) === '1'){ unlock(false); }
+  }catch(e){}
+})();
+
+// Week accordion: opening one week closes all the others.
 document.querySelectorAll('details.week-acc').forEach(function(d){
   d.addEventListener('toggle', function(){
     if(this.open){
       document.querySelectorAll('details.week-acc').forEach(function(o){
         if(o !== d) o.open = false;
       });
-      // Bring the opened week into view
       this.scrollIntoView({behavior:'smooth', block:'start'});
     }
   });
 });
-</script>
-
-<script>
-(function(){
-  var CORRECT_CODE = 'SHA0926';
-  var STORAGE_KEY = 'sha0926-course-unlocked';
-  var gate = document.getElementById('moduleGate');
-  var content = document.getElementById('courseContent');
-  var input = document.getElementById('gateInput');
-  var btn = document.getElementById('gateBtn');
-  var err = document.getElementById('gateErr');
-
-  function unlock(){
-    gate.style.display = 'none';
-    content.style.display = 'block';
-    try{ localStorage.setItem(STORAGE_KEY, '1'); }catch(e){}
-  }
-
-  function tryCode(){
-    var val = (input.value || '').trim().toUpperCase().replace(/\s+/g,'');
-    if(val === CORRECT_CODE){
-      err.textContent = '';
-      unlock();
-    } else {
-      err.textContent = 'ކޯޑު ރަނގަޅެއް ނޫން — އަނެއްކާ ޗެކްކޮށްލައްވާ';
-      input.focus();
-      input.select();
-    }
-  }
-
-  btn.addEventListener('click', tryCode);
-  input.addEventListener('keydown', function(e){ if(e.key === 'Enter') tryCode(); });
-
-  // If this device already unlocked it before, skip the gate.
-  try{
-    if(localStorage.getItem(STORAGE_KEY) === '1'){ unlock(); }
-  }catch(e){}
-})();
 </script>
 </body>
 </html>
